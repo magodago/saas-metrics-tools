@@ -2,26 +2,23 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Calculadora Runway</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de Runway</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Calculadora de Runway para Startups</h1>
+    <div class="calculator">
+        <h1>Calculadora de Runway</h1>
         <form id="runway-form">
-            <label for="current-cash">Cash Actual (USD):</label><br>
-            <input type="number" id="current-cash" min="0" required><br>
+            <label for="current-cash">Capital Actual (USD):</label>
+            <input type="number" id="current-cash" required><br>
 
-            <label for="monthly-burn-rate">Burn Rate Mensual (USD):</label><br>
-            <input type="number" id="monthly-burn-rate" min="0" required><br>
+            <label for="monthly-burn-rate">Burn Rate Mensual (USD/mes):</label>
+            <input type="number" id="monthly-burn-rate" required><br>
 
             <button type="submit">Calcular Runway</button>
         </form>
-        <div id="result">
-            <p>Runway Restantes: <span id="runway-months"></span> meses</p>
-        </div>
+        <div id="result"></div>
     </div>
-    <script src="script.js"></script>
 
 <!-- MONETIZATION_BLOCK -->
 <section class="monetization-block" aria-label="Recomendación">
