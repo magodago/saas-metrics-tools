@@ -1,30 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Cálculo CAC SaaS</title>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../_base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAC calculator for startups | Free SaaS Metrics</title>
+  <meta name="description" content="Free CAC calculator for startups. CAC calculator for startups.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://magodago.github.io/saas-metrics-tools/tools/cac-calculator/">
+  <meta property="og:title" content="CAC calculator for startups | Free SaaS Metrics">
+  <meta property="og:description" content="Free CAC calculator for startups. CAC calculator for startups.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://magodago.github.io/saas-metrics-tools/tools/cac-calculator/">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"CAC calculator for startups","description":"Free CAC calculator for startups. CAC calculator for startups.","url":"https://magodago.github.io/saas-metrics-tools/tools/cac-calculator/","applicationCategory":"FinanceApplication"}
+  </script>
 </head>
 <body>
-    <div class="container">
-        <h1>Cálculo de CAC para SaaS</h1>
-        <form id="cacForm">
-            <label for="marketingCost">Coste de Marketing y Ventas ($):</label>
-            <input type="number" step="0.01" id="marketingCost" required><br>
-
-            <label for="newCustomers">Número de Clientes Nuevos:</label>
-            <input type="number" id="newCustomers" required><br>
+    <div class="calculator-container">
+        <h1>CAC Calculator for Startups</h1>
+        <form id="cac-form">
+            <label for="cost-per-acquisition">Costo por adquisición (C):</label>
+            <input type="number" id="cost-per-acquisition" required>
+            
+            <label for="total-revenue">Ganancias totales (R):</label>
+            <input type="number" id="total-revenue" required>
 
             <button type="submit">Calcular CAC</button>
         </form>
-        <div id="result"></div>
+        <div id="result" class="result">
+            <h2>Resultado:</h2>
+            <p id="cac-result"></p>
+        </div>
     </div>
+    <script src="script.js"></script>
 
-<!-- MONETIZATION_BLOCK -->
-<section class="monetization-block" aria-label="Recomendación">
-  <p>Need help optimizing your SaaS metrics? We recommend using professional analytics tools.</p>
-  <a href="#" class="monetization-cta">Explore tools</a>
+<section class="tool-how-to" style="margin-top:1.5rem;padding:1rem;background:#f1f5f9;border-radius:8px;font-size:0.9375rem;">
+  <h3 style="font-size:1rem;margin-bottom:0.5rem;">How to use this calculator</h3>
+  <p>Enter your numbers in the fields above and click Calculate. The result appears instantly. Use this free tool to plan your metrics. For more guides, see our <a href="https://magodago.github.io/saas-metrics-tools/blog/">blog</a> and <a href="https://magodago.github.io/saas-metrics-tools/privacy.html">privacy policy</a>.</p>
 </section>
 
+
+<section class="monetization" aria-label="Recommended tools">
+  <h3>Recommended SaaS Tools</h3>
+  <div class="affiliate-grid">
+    <div class="affiliate-card"><h4>Notion</h4><p>All-in-one workspace.</p><a href="/affiliate/notion/" class="affiliate-btn">Try Now</a></div>
+    <div class="affiliate-card"><h4>ChartMogul</h4><p>SaaS analytics.</p><a href="/affiliate/chartmogul/" class="affiliate-btn">Try Now</a></div>
+  </div>
+  <div id="adsense"></div>
+</section>
+
+<section class="related-tools"><h3>More tools</h3><a href="https://magodago.github.io/saas-metrics-tools/">All calculators</a></section>
 </body>
 </html>
