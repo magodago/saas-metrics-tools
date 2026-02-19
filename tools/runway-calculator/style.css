@@ -1,58 +1,40 @@
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-    .calculator {
-        width: 300px;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        text-align: center;
-    }
+label {
+    display: block;
+    margin-top: 10px;
+}
 
-    h1 {
-        margin-bottom: 20px;
-    }
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
 
-    form label {
-        display: block;
-        font-weight: bold;
-        margin-top: 15px;
-    }
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
-    input {
-        width: calc(100% - 22px);
-        padding: 10px;
-        margin-top: 8px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
+button:hover {
+    background-color: #0056b3;
+}
 
-    button {
-        background-color: #5cb85c;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        margin-top: 20px;
-        cursor: pointer;
-        width: 100%;
-        border-radius: 4px;
-    }
-
-    button:hover {
-        background-color: #4cae4c;
-    }
-
-    #result {
-        margin-top: 30px;
-        font-weight: bold;
-    }
+.resultado {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
 </style>
