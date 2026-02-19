@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LTV Calculator – Customer Lifetime Value | Free SaaS Metrics</title>
+  <meta name="description" content="Free LTV calculator. Lifetime Value = average value × purchase frequency × lifetime. Essential SaaS metric.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://magodago.github.io/saas-metrics-tools/tools/ltv/">
+  <meta property="og:title" content="LTV Calculator – Customer Lifetime Value">
+  <meta property="og:description" content="Calculate Customer Lifetime Value for SaaS and subscription businesses.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"LTV Calculator","description":"Calculate Customer Lifetime Value for SaaS","url":"https://magodago.github.io/saas-metrics-tools/tools/ltv/","applicationCategory":"FinanceApplication"}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="../../">SaaS Metrics</a>
+      <nav>
+        <a href="../../#tools">Tools</a>
+        <a href="../../#learn">Learn</a>
+        <a href="../../blog/how-to-calculate-ltv.html">How to Calculate LTV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="tool-main">
+    <h1>LTV Calculator</h1>
+    <p class="tool-desc">Lifetime Value = average value per purchase × purchase frequency (per year) × customer lifetime (years).</p>
+
+    <form id="calc-form" class="tool-form">
+      <label for="avg-value">Average value per purchase ($)</label>
+      <input type="number" id="avg-value" min="0" step="any" placeholder="e.g. 50" required>
+      <label for="frequency">Purchase frequency per year</label>
+      <input type="number" id="frequency" min="0" step="any" placeholder="e.g. 12" required>
+      <label for="lifetime">Customer lifetime (years)</label>
+      <input type="number" id="lifetime" min="0" step="any" placeholder="e.g. 3" required>
+      <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+
+    <div id="result-area" class="result-area" aria-live="polite" hidden></div>
+    <p id="error-msg" class="error-msg" aria-live="assertive" hidden></p>
+
+    <section class="monetization">
+      <h3>Recommended SaaS Tools</h3>
+      <div class="affiliate-grid">
+        <div class="affiliate-card">
+          <h4>Analytics Platform</h4>
+          <p>Track your SaaS metrics in real time.</p>
+          <a href="#" class="affiliate-btn">Try Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav>
+        <a href="../cac/">CAC</a>
+        <a href="../mrr/">MRR</a>
+        <a href="../churn/">Churn</a>
+        <a href="../runway/">Runway</a>
+        <a href="../../">Home</a>
+      </nav>
+      <p class="copy">Built by NEO MAX Engine</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
