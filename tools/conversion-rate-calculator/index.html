@@ -19,25 +19,31 @@
   </script>
 </head>
 <body>
-    <div class="container">
-        <h1>Calculadora de Tasa de Conversión</h1>
-        <form id="conversion-rate-form">
-            <label for="total-visits">Número total de visitas:</label>
-            <input type="number" id="total-visits" name="total-visits" required>
-            
-            <label for="conversions">Números de conversiones:</label>
-            <input type="number" id="conversions" name="conversions" required>
-            
-            <button type="submit">Calcular</button>
-        </form>
 
-        <div id="result-area">
-            <h2>Resultado:</h2>
-            <p id="conversion-rate-result"></p>
-        </div>
-    </div>
+<div class="container">
+    <h1>Calculadora de Tasa de Conversión</h1>
     
-    <script src="scripts.js"></script>
+    <form id="conversionForm">
+        <div class="input-group">
+            <label for="totalVisits">Total de Visitas:</label>
+            <input type="number" id="totalVisits" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="conversions">Número de Converciones:</label>
+            <input type="number" id="conversions" required>
+        </div>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultArea" class="result-area hidden">
+        <h2>Tasa de Conversión</h2>
+        <p id="conversionRate"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
 
 <section class="tool-how-to" style="margin-top:1.5rem;padding:1rem;background:#f1f5f9;border-radius:8px;font-size:0.9375rem;">
   <h3 style="font-size:1rem;margin-bottom:0.5rem;">How to use this calculator</h3>
