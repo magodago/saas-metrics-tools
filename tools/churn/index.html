@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Churn Rate Calculator – Customer Churn % | Free SaaS Metrics</title>
+  <meta name="description" content="Free churn rate calculator. Churn = (lost customers / total customers) × 100. Essential SaaS metric.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://magodago.github.io/saas-metrics-tools/tools/churn/">
+  <meta property="og:title" content="Churn Rate Calculator">
+  <meta property="og:description" content="Calculate customer churn rate for SaaS.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Churn Rate Calculator","description":"Calculate customer churn rate for SaaS","url":"https://magodago.github.io/saas-metrics-tools/tools/churn/","applicationCategory":"FinanceApplication"}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="../../">SaaS Metrics</a>
+      <nav>
+        <a href="../../#tools">Tools</a>
+        <a href="../../#learn">Learn</a>
+        <a href="../../blog/reducing-churn-strategies.html">Reduce Churn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="tool-main">
+    <h1>Churn Rate Calculator</h1>
+    <p class="tool-desc">Churn % = (customers lost in period ÷ total customers at start) × 100.</p>
+
+    <form id="calc-form" class="tool-form">
+      <label for="lost">Customers lost in period</label>
+      <input type="number" id="lost" min="0" step="1" placeholder="e.g. 15" required>
+      <label for="total">Total customers at start of period</label>
+      <input type="number" id="total" min="1" step="1" placeholder="e.g. 500" required>
+      <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+
+    <div id="result-area" class="result-area" aria-live="polite" hidden></div>
+    <p id="error-msg" class="error-msg" aria-live="assertive" hidden></p>
+
+    <section class="monetization">
+      <h3>Recommended SaaS Tools</h3>
+      <div class="affiliate-grid">
+        <div class="affiliate-card">
+          <h4>Analytics Platform</h4>
+          <p>Track your SaaS metrics in real time.</p>
+          <a href="#" class="affiliate-btn">Try Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav>
+        <a href="../cac/">CAC</a>
+        <a href="../ltv/">LTV</a>
+        <a href="../mrr/">MRR</a>
+        <a href="../runway/">Runway</a>
+        <a href="../../">Home</a>
+      </nav>
+      <p class="copy">Built by NEO MAX Engine</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
