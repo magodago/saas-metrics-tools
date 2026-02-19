@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Runway</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Runway para Startups</h1>
+        <form id="runway-form">
+            <label for="current-cash">Cash Actual (USD):</label><br>
+            <input type="number" id="current-cash" min="0" required><br>
+
+            <label for="monthly-burn-rate">Burn Rate Mensual (USD):</label><br>
+            <input type="number" id="monthly-burn-rate" min="0" required><br>
+
+            <button type="submit">Calcular Runway</button>
+        </form>
+        <div id="result">
+            <p>Runway Restantes: <span id="runway-months"></span> meses</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+<!-- MONETIZATION_BLOCK -->
+<section class="monetization-block" aria-label="Recomendación">
+  <p>Need help optimizing your SaaS metrics? We recommend using professional analytics tools.</p>
+  <a href="#" class="monetization-cta">Explore tools</a>
+</section>
+
+</body>
+</html>
