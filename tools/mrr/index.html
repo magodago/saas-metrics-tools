@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MRR Calculator – Monthly Recurring Revenue | Free SaaS Metrics</title>
+  <meta name="description" content="Free MRR calculator. Sum your monthly recurring revenue by plan. Essential SaaS metric.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://magodago.github.io/saas-metrics-tools/tools/mrr/">
+  <meta property="og:title" content="MRR Calculator – Monthly Recurring Revenue">
+  <meta property="og:description" content="Calculate Monthly Recurring Revenue for your SaaS.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"MRR Calculator","description":"Calculate Monthly Recurring Revenue for SaaS","url":"https://magodago.github.io/saas-metrics-tools/tools/mrr/","applicationCategory":"FinanceApplication"}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="../../">SaaS Metrics</a>
+      <nav>
+        <a href="../../#tools">Tools</a>
+        <a href="../../#learn">Learn</a>
+        <a href="../../blog/saas-metrics-benchmarks.html">Benchmarks</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="tool-main">
+    <h1>MRR Calculator</h1>
+    <p class="tool-desc">MRR = sum of monthly recurring revenue (e.g. plan price × number of customers per plan).</p>
+
+    <form id="calc-form" class="tool-form">
+      <label for="mrr-total">Total Monthly Recurring Revenue ($)</label>
+      <input type="number" id="mrr-total" min="0" step="any" placeholder="e.g. 45000" required>
+      <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+
+    <div id="result-area" class="result-area" aria-live="polite" hidden></div>
+    <p id="error-msg" class="error-msg" aria-live="assertive" hidden></p>
+
+    <section class="monetization">
+      <h3>Recommended SaaS Tools</h3>
+      <div class="affiliate-grid">
+        <div class="affiliate-card">
+          <h4>Analytics Platform</h4>
+          <p>Track your SaaS metrics in real time.</p>
+          <a href="#" class="affiliate-btn">Try Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav>
+        <a href="../cac/">CAC</a>
+        <a href="../ltv/">LTV</a>
+        <a href="../churn/">Churn</a>
+        <a href="../runway/">Runway</a>
+        <a href="../../">Home</a>
+      </nav>
+      <p class="copy">Built by NEO MAX Engine</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
