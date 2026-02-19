@@ -1,22 +1,22 @@
 <script>
-document.getElementById('ltvForm').onsubmit = function(e) {
-    e.preventDefault();
+document.getElementById('ltvForm').addEventListener('submit', function(event) {
+    event.preventDefault();
     
-    const avgRevenuePerUser = parseFloat(document.getElementById('avgRevenuePerUser').value);
-    const customerRetentionRate = parseFloat(document.getElementById('customerRetentionRate').value);
+    const monthlyRevenue = parseFloat(document.getElementById('monthlyRevenue').value);
+    const customerLifetimeValue = parseFloat(document.getElementById('customerLifetimeValue').value);
+    const customerAcquisitionCost = parseFloat(document.getElementById('customerAcquisitionCost').value);
 
-    if (isNaN(avgRevenuePerUser) || isNaN(customerRetentionRate)) {
+    if (isNaN(monthlyRevenue) || isNaN(customerLifetimeValue) || isNaN(customerAcquisitionCost)) {
         alert("Por favor, ingrese valores numéricos válidos.");
         return;
     }
 
-    const retentionRate = customerRetentionRate / 100; // convert to decimal
-    const churnRate = 1 - retentionRate;
+    const ltvResult = monthlyRevenue * customerLifetimeValue / customerAcquisitionCost;
+    document.getElementById('ltvResult').innerText = ltvResult.toFixed(2);
 
-    let months = 12; // base calculation for yearly
-
-    let ltv = avgRevenuePerUser * (1 - Math.pow(churnRate, months));
-
-    document.getElementById('result').innerText = `LTV: $${ltv.toFixed(2)}`;
-}
+    const roiResult = (customerLifetimeValue - customerAcquisitionCost) / customerAcquisitionCost;
+    document.getElementById('roiResult').innerText = roiResult.toFixed(4);
+    
+    document.getElementById('result').style.display = 'block';
+});
 </script>
