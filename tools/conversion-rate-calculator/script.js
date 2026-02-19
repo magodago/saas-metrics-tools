@@ -1,17 +1,18 @@
 <script>
-document.getElementById('conversion-rate-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const totalVisits = parseInt(document.getElementById('total-visits').value);
-    const conversions = parseInt(document.getElementById('conversions').value);
+document.getElementById('conversionForm').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-    if (isNaN(totalVisits) || isNaN(conversions)) {
-        alert('Por favor, ingresa valores numéricos válidos.');
+    const totalVisits = document.getElementById('totalVisits').value;
+    const conversions = document.getElementById('conversions').value;
+
+    if (totalVisits === '' || conversions === '') {
+        alert('Por favor, ingresa los valores para ambos campos.');
         return;
     }
 
     const conversionRate = (conversions / totalVisits) * 100;
-    
-    document.getElementById('conversion-rate-result').innerText = `Tasa de conversión: ${conversionRate.toFixed(2)}%`;
+    document.getElementById('conversionRate').textContent = `Tasa de Conversión: ${conversionRate.toFixed(2)}%`;
+
+    document.getElementById('resultArea').classList.remove('hidden');
 });
 </script>
