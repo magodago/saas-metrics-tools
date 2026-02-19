@@ -1,0 +1,26 @@
+<style>
+.container {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+label, input, button {
+    display: block;
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#result p {
+    font-size: 1.2em;
+}
+</style>
