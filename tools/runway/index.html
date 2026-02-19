@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Runway Calculator – Startup Runway in Months | Free SaaS Metrics</title>
+  <meta name="description" content="Free runway calculator. Runway = available cash ÷ monthly burn rate. Essential startup metric.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://magodago.github.io/saas-metrics-tools/tools/runway/">
+  <meta property="og:title" content="Runway Calculator – Startup Runway">
+  <meta property="og:description" content="Calculate how many months of runway you have.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Runway Calculator","description":"Calculate startup runway in months","url":"https://magodago.github.io/saas-metrics-tools/tools/runway/","applicationCategory":"FinanceApplication"}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="../../">SaaS Metrics</a>
+      <nav>
+        <a href="../../#tools">Tools</a>
+        <a href="../../#learn">Learn</a>
+        <a href="../../blog/startup-runway-guide.html">Runway Guide</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="tool-main">
+    <h1>Runway Calculator</h1>
+    <p class="tool-desc">Runway (months) = available cash ÷ monthly burn rate.</p>
+
+    <form id="calc-form" class="tool-form">
+      <label for="cash">Available cash ($)</label>
+      <input type="number" id="cash" min="0" step="any" placeholder="e.g. 500000" required>
+      <label for="burn">Monthly burn rate ($)</label>
+      <input type="number" id="burn" min="0.01" step="any" placeholder="e.g. 50000" required>
+      <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+
+    <div id="result-area" class="result-area" aria-live="polite" hidden></div>
+    <p id="error-msg" class="error-msg" aria-live="assertive" hidden></p>
+
+    <section class="monetization">
+      <h3>Recommended SaaS Tools</h3>
+      <div class="affiliate-grid">
+        <div class="affiliate-card">
+          <h4>Analytics Platform</h4>
+          <p>Track your SaaS metrics in real time.</p>
+          <a href="#" class="affiliate-btn">Try Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav>
+        <a href="../cac/">CAC</a>
+        <a href="../ltv/">LTV</a>
+        <a href="../mrr/">MRR</a>
+        <a href="../churn/">Churn</a>
+        <a href="../../">Home</a>
+      </nav>
+      <p class="copy">Built by NEO MAX Engine</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
