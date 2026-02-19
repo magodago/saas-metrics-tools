@@ -1,0 +1,21 @@
+<style>
+.container {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+input, button {
+    display: block;
+    margin: 10px auto;
+}
+label {
+    display: block;
+}
+button {
+    cursor: pointer;
+}
+p {
+    font-size: 1.2em;
+    color: #333;
+}
+</style>
