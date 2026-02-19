@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Calculate LTV – Customer Lifetime Value | SaaS Metrics</title>
+  <meta name="description" content="Learn how to calculate LTV: average value × purchase frequency × lifetime. Use our free LTV calculator and improve unit economics.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://magodago.github.io/saas-metrics-tools/blog/how-to-calculate-ltv.html">
+  <meta property="og:title" content="How to Calculate LTV – Customer Lifetime Value">
+  <meta property="og:description" content="Step-by-step guide to calculating LTV for SaaS and subscription businesses.">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"How to Calculate LTV – Customer Lifetime Value","description":"Calculate LTV with average value, purchase frequency, and customer lifetime.","author":{"@type":"Organization","name":"SaaS Metrics"},"publisher":{"@type":"Organization","name":"SaaS Metrics"},"datePublished":"2025-01-15","dateModified":"2025-01-15","mainEntityOfPage":{"@type":"WebPage","@id":"https://magodago.github.io/saas-metrics-tools/blog/how-to-calculate-ltv.html"}}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="../">SaaS Metrics</a>
+      <nav>
+        <a href="../#tools">Tools</a>
+        <a href="../#learn">Learn</a>
+        <a href="what-is-cac.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="blog-article" style="max-width:720px;margin:0 auto;padding:2rem 1.5rem">
+    <article>
+      <h1>How to Calculate LTV – Customer Lifetime Value</h1>
+      <p class="section-intro">Customer Lifetime Value (LTV) is the total revenue you expect from a customer over their entire relationship with you. This guide shows you how to calculate LTV and use it with CAC for better decisions.</p>
+
+      <div class="content-block">
+        <h2>What Is LTV?</h2>
+        <p>LTV (Lifetime Value) is the total revenue (or gross profit) you expect from one customer over the full time they remain a customer. For SaaS, that usually means the sum of all subscription payments (and sometimes add-ons) until they churn. LTV answers: &ldquo;How much is one customer worth to us over their lifetime?&rdquo;</p>
+        <p>LTV is essential for unit economics. You want LTV to be meaningfully higher than your <a href="../tools/cac/">CAC</a>—often at least 3:1—so that each acquisition is profitable after accounting for serving that customer.</p>
+      </div>
+
+      <div class="content-block">
+        <h2>The LTV Formula</h2>
+        <p>A widely used formula for LTV is:</p>
+        <p><strong>LTV = Average value per purchase &times; Purchase frequency (per year) &times; Customer lifetime (years)</strong></p>
+        <p>For subscription SaaS, &ldquo;average value per purchase&rdquo; is often the average revenue per user per period (e.g. monthly ARPU). &ldquo;Purchase frequency&rdquo; is how many times they pay per year (e.g. 12 for monthly). &ldquo;Customer lifetime&rdquo; is the average number of years a customer stays. So LTV = ARPU &times; 12 &times; lifetime in years, or equivalently LTV = ARPU &times; (lifetime in months).</p>
+        <p>Another common approach for subscription businesses is <strong>LTV = ARPU &divide; Churn rate</strong> (with churn in decimal form, e.g. 0.02 for 2%). That gives you LTV in the same time unit as your churn (e.g. monthly churn &rarr; LTV in months). Both approaches can be valid depending on whether you prefer to model by lifetime or by churn.</p>
+      </div>
+
+      <div class="content-block">
+        <h2>Step-by-Step: How to Calculate LTV</h2>
+        <h3>Step 1: Define average value per purchase</h3>
+        <p>For SaaS, use average revenue per user per billing period (ARPU). If you have multiple plans, you can use a revenue-weighted average. For non-subscription, use the average order value (AOV) that a typical customer pays per transaction.</p>
+        <h3>Step 2: Define purchase frequency</h3>
+        <p>How many times per year does the customer pay? For monthly subscription, that is 12; for annual, 1. You can also work in months: LTV = ARPU &times; average lifetime in months.</p>
+        <h3>Step 3: Estimate customer lifetime</h3>
+        <p>Customer lifetime is how long, on average, a customer stays before churning. You can derive it from your <a href="../tools/churn/">churn rate</a>: average lifetime &asymp; 1 &divide; churn rate (e.g. 2% monthly churn &rarr; 1/0.02 = 50 months). Use historical data when possible.</p>
+        <h3>Step 4: Multiply</h3>
+        <p>LTV = Average value &times; Frequency &times; Lifetime (in consistent units). Use our free <a href="../tools/ltv/">LTV calculator</a>: enter average value per purchase, purchases per year, and customer lifetime in years to get LTV per customer.</p>
+      </div>
+
+      <div class="content-block">
+        <h2>Why LTV Matters</h2>
+        <p>LTV tells you how much you can afford to spend to acquire a customer (CAC) and still be profitable. It also guides pricing and packaging: if LTV is low, you may need to reduce CAC, increase price, or improve retention. Many investors and operators look at the LTV:CAC ratio and payback period (how many months of revenue it takes to recover CAC).</p>
+        <h3>LTV and growth</h3>
+        <p>Higher LTV means each new customer is more valuable. That can justify higher CAC in channels that bring better-fit customers, or it can allow you to invest more in acquisition while staying unit-economic positive.</p>
+      </div>
+
+      <div class="content-block">
+        <h2>Improving LTV</h2>
+        <p>You can increase LTV by: raising prices or moving customers to higher tiers, reducing <a href="reducing-churn-strategies.html">churn</a>, increasing purchase frequency (e.g. annual plans with add-ons), and expanding revenue per account (upsells, cross-sells). Even small improvements in retention or ARPU compound into much higher LTV over time.</p>
+      </div>
+
+      <div class="content-block">
+        <h2>Common Mistakes</h2>
+        <p>Using revenue instead of gross margin when your goal is profitability; ignoring churn or using unrealistic lifetime assumptions; mixing time periods (e.g. monthly ARPU with annual lifetime without converting); and not segmenting (enterprise vs SMB can have very different LTV). Use consistent definitions and, when possible, segment by cohort or plan.</p>
+      </div>
+
+      <div class="content-block">
+        <h2>Summary</h2>
+        <p>LTV = average value per purchase &times; purchase frequency &times; customer lifetime. Calculate it with historical ARPU and churn, then pair it with <a href="../tools/cac/">CAC</a> for LTV:CAC and payback. Use our <a href="../tools/ltv/">LTV calculator</a> to get your number quickly, and explore our other <a href="../">SaaS metrics tools</a> for CAC, <a href="../tools/mrr/">MRR</a>, and <a href="../tools/runway/">runway</a>.</p>
+      </div>
+
+      <section class="monetization" style="margin-top:2rem">
+        <h3>Recommended SaaS Tools</h3>
+        <div class="affiliate-grid">
+          <div class="affiliate-card">
+            <h4>Analytics Platform</h4>
+            <p>Track your SaaS metrics in real time.</p>
+            <a href="#" class="affiliate-btn">Try Now</a>
+          </div>
+        </div>
+      </section>
+
+      <p style="margin-top:2rem"><a href="../tools/ltv/" class="btn btn-primary">Use LTV Calculator</a> <a href="../#tools" class="btn btn-secondary">All Tools</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav>
+        <a href="../tools/cac/">CAC</a>
+        <a href="../tools/ltv/">LTV</a>
+        <a href="../tools/mrr/">MRR</a>
+        <a href="../tools/churn/">Churn</a>
+        <a href="../tools/runway/">Runway</a>
+        <a href="../">Home</a>
+      </nav>
+      <p class="copy">Built by NEO MAX Engine</p>
+    </div>
+  </footer>
+</body>
+</html>
