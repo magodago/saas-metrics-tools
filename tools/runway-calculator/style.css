@@ -1,26 +1,58 @@
 <style>
-.container {
-    max-width: 400px;
-    margin: auto;
-    text-align: center;
-}
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
 
-label, input, button {
-    display: block;
-    width: calc(100% - 20px);
-    margin-bottom: 15px;
-    padding: 10px;
-    box-sizing: border-box;
-}
+    .calculator {
+        width: 300px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
+    h1 {
+        margin-bottom: 20px;
+    }
 
-#result p {
-    font-size: 1.2em;
-}
+    form label {
+        display: block;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    input {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-top: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        background-color: #5cb85c;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    button:hover {
+        background-color: #4cae4c;
+    }
+
+    #result {
+        margin-top: 30px;
+        font-weight: bold;
+    }
 </style>
