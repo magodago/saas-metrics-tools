@@ -6,26 +6,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="calculator-container">
         <h1>Calculadora de MRR</h1>
         <form id="mrr-form">
-            <label for="num-customers-free">Clientes (Plan gratuito):</label>
-            <input type="number" id="num-customers-free" name="num-customers-free"><br><br>
+            <label for="num-customers-basic">Clientes Basic:</label>
+            <input type="number" id="num-customers-basic" required><br>
 
-            <label for="price-free">Precio (Plan gratuito):</label>
-            <input type="number" id="price-free" step="0.01" name="price-free"><br><br>
+            <label for="price-basic">Precio Basic (€/mes):</label>
+            <input type="number" step="0.01" id="price-basic" required><br>
 
-            <label for="num-customers-paid">Clientes (Plan pago):</label>
-            <input type="number" id="num-customers-paid" name="num-customers-paid"><br><br>
+            <label for="num-customers-premium">Clientes Premium:</label>
+            <input type="number" id="num-customers-premium" required><br>
 
-            <label for="price-paid">Precio (Plan pago):</label>
-            <input type="number" id="price-paid" step="0.01" name="price-paid"><br><br>
+            <label for="price-premium">Precio Premium (€/mes):</label>
+            <input type="number" step="0.01" id="price-premium" required><br>
 
             <button type="submit">Calcular MRR</button>
         </form>
-        <p>MRR total: <span id="mrr-total"></span></p>
+        <div id="result"></div>
     </div>
-    <script src="script.js"></script>
 
 <!-- MONETIZATION_BLOCK -->
 <section class="monetization-block" aria-label="Recomendación">
