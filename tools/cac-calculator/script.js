@@ -1,17 +1,16 @@
 <script>
-document.getElementById('cacForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+document.getElementById('cac-form').addEventListener('submit', function(event) {
+    event.preventDefault();
     
-    const marketingCost = parseFloat(document.getElementById('marketingCost').value);
-    const newCustomers = parseInt(document.getElementById('newCustomers').value);
+    const costPerAcquisition = document.getElementById('cost-per-acquisition').value;
+    const totalRevenue = document.getElementById('total-revenue').value;
 
-    if (isNaN(marketingCost) || isNaN(newCustomers)) {
-        alert("Por favor, asegúrate de que los campos sean números válidos.");
+    if (!costPerAcquisition || !totalRevenue) {
+        alert("Por favor, completa todos los campos.");
         return;
     }
 
-    const cac = marketingCost / newCustomers;
-
-    document.getElementById('result').innerText = `El CAC por cliente es: $${cac.toFixed(2)}`;
+    const cacResult = parseFloat(totalRevenue) / parseFloat(costPerAcquisition);
+    document.getElementById('cac-result').innerText = `Tu CAC es: $${cacResult.toFixed(2)}`;
 });
 </script>
