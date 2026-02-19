@@ -1,0 +1,18 @@
+<style>
+.container {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+input, label {
+    display: block;
+    margin: 10px 0;
+}
+button {
+    padding: 10px 20px;
+}
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+</style>
