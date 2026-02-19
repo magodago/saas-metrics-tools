@@ -1,10 +1,11 @@
 <script>
-function calculateChurn() {
-    const initialCustomers = document.getElementById('initialCustomers').value;
-    const lostCustomers = document.getElementById('lostCustomers').value;
+document.getElementById('churn-form').onsubmit = function(e) {
+    e.preventDefault();
+    const initialCustomers = parseInt(document.getElementById('initial-customers').value);
+    const lostCustomers = parseInt(document.getElementById('lost-customers').value);
 
-    if (isNaN(initialCustomers) || isNaN(lostCustomers)) {
-        alert("Por favor, ingresa valores numéricos.");
+    if(isNaN(initialCustomers) || isNaN(lostCustomers)) {
+        document.getElementById('result').innerText = "Por favor, ingresa valores numéricos válidos.";
         return;
     }
 
