@@ -1,12 +1,14 @@
 <script>
 document.getElementById('mrr-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    const numCustomersFree = parseFloat(document.getElementById('num-customers-free').value);
-    const priceFree = parseFloat(document.getElementById('price-free').value);
-    const numCustomersPaid = parseFloat(document.getElementById('num-customers-paid').value);
-    const pricePaid = parseFloat(document.getElementById('price-paid').value);
+    
+    const numCustomersBasic = parseInt(document.getElementById('num-customers-basic').value, 10);
+    const priceBasic = parseFloat(document.getElementById('price-basic').value);
+    const numCustomersPremium = parseInt(document.getElementById('num-customers-premium').value, 10);
+    const pricePremium = parseFloat(document.getElementById('price-premium').value);
 
-    const mrrTotal = (numCustomersFree * priceFree) + (numCustomersPaid * pricePaid);
-    document.getElementById('mrr-total').innerText = mrrTotal.toFixed(2);
+    const mrrTotal = (numCustomersBasic * priceBasic) + (numCustomersPremium * pricePremium);
+
+    document.getElementById('result').innerText = `MRR Total: €${mrrTotal.toFixed(2)}`;
 });
 </script>
