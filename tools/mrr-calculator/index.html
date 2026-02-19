@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora MRR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de MRR</h1>
+        <form id="mrr-form">
+            <label for="num-customers-free">Clientes (Plan gratuito):</label>
+            <input type="number" id="num-customers-free" name="num-customers-free"><br><br>
+
+            <label for="price-free">Precio (Plan gratuito):</label>
+            <input type="number" id="price-free" step="0.01" name="price-free"><br><br>
+
+            <label for="num-customers-paid">Clientes (Plan pago):</label>
+            <input type="number" id="num-customers-paid" name="num-customers-paid"><br><br>
+
+            <label for="price-paid">Precio (Plan pago):</label>
+            <input type="number" id="price-paid" step="0.01" name="price-paid"><br><br>
+
+            <button type="submit">Calcular MRR</button>
+        </form>
+        <p>MRR total: <span id="mrr-total"></span></p>
+    </div>
+    <script src="script.js"></script>
+
+<!-- MONETIZATION_BLOCK -->
+<section class="monetization-block" aria-label="Recomendación">
+  <p>Need help optimizing your SaaS metrics? We recommend using professional analytics tools.</p>
+  <a href="#" class="monetization-cta">Explore tools</a>
+</section>
+
+</body>
+</html>
