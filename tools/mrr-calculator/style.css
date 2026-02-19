@@ -1,21 +1,22 @@
 <style>
-.container {
-    width: 300px;
+.calculator-container {
+    max-width: 400px;
     margin: auto;
+    padding: 20px;
     text-align: center;
 }
-input, button {
+label, input, button {
     display: block;
     margin: 10px auto;
 }
-label {
-    display: block;
+input[type="number"] {
+    width: 80%;
 }
 button {
-    cursor: pointer;
+    padding: 10px 20px;
 }
-p {
-    font-size: 1.2em;
-    color: #333;
+#result {
+    margin-top: 20px;
+    font-size: 1.5em;
 }
 </style>
