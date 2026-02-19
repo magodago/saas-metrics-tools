@@ -1,0 +1,45 @@
+<style>
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+label, input, button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result-area {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#result {
+    font-size: 1.2em;
+    padding: 10px;
+}
+</style>
