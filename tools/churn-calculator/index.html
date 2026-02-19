@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Churn Rate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Churn Rate</h1>
+        <form id="churnForm">
+            <label for="initialCustomers">Clientes al inicio del periodo:</label>
+            <input type="number" id="initialCustomers" required><br>
+
+            <label for="lostCustomers">Clientes perdidos:</label>
+            <input type="number" id="lostCustomers" required><br>
+        </form>
+        <button onclick="calculateChurn()">Calcular Churn Rate</button>
+        <div id="result"></div>
+    </div>
+
+<!-- MONETIZATION_BLOCK -->
+<section class="monetization-block" aria-label="Recomendación">
+  <p>Need help optimizing your SaaS metrics? We recommend using professional analytics tools.</p>
+  <a href="#" class="monetization-cta">Explore tools</a>
+</section>
+
+</body>
+</html>
