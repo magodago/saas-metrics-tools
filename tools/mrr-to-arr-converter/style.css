@@ -1,45 +1,35 @@
 <style>
 .container {
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    background-color: #fff;
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
 }
 
-h1, h2 {
-    text-align: center;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-label, input, button {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
+label {
+    margin-top: 10px;
+    font-weight: bold;
 }
 
-input {
+input, select {
     padding: 5px;
-    box-sizing: border-box;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 
-button {
-    background-color: #28a745;
+.btn {
+    background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-.result-area {
-    margin-top: 20px;
-    text-align: center;
-}
-
-#result {
-    font-size: 1.2em;
     padding: 10px;
+}
+
+.btn:hover {
+    background-color: #45a049;
 }
 </style>
