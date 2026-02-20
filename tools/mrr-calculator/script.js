@@ -2,13 +2,18 @@
 document.getElementById('mrr-form').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    const numCustomersBasic = parseInt(document.getElementById('num-customers-basic').value, 10);
-    const priceBasic = parseFloat(document.getElementById('price-basic').value);
-    const numCustomersPremium = parseInt(document.getElementById('num-customers-premium').value, 10);
-    const pricePremium = parseFloat(document.getElementById('price-premium').value);
+    const monthlyPrice = document.getElementById('monthly-subscription-price').value;
+    const totalCustomers = document.getElementById('total-customers').value;
+    const annualGrowthRate = document.getElementById('annual-growth-rate').value;
 
-    const mrrTotal = (numCustomersBasic * priceBasic) + (numCustomersPremium * pricePremium);
+    if (monthlyPrice === '' || totalCustomers === '' || annualGrowthRate === '') {
+        alert('Por favor, llena todos los campos.');
+        return;
+    }
 
-    document.getElementById('result').innerText = `MRR Total: €${mrrTotal.toFixed(2)}`;
+    const monthlyGrowthRate = (annualGrowthRate / 100) / 12;
+    const mrr = ((monthlyPrice * totalCustomers) * (1 + monthlyGrowthRate)).toFixed(2);
+
+    document.getElementById('mrr-result').textContent = `El Monthly Recurring Revenue es: €${mrr}`;
 });
 </script>
