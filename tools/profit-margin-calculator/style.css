@@ -1,0 +1,30 @@
+<style>
+.calculator-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+input, label, button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 5px;
+}
+
+button.calculate-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button.calculate-button:hover {
+    background-color: #45a049;
+}
+</style>
