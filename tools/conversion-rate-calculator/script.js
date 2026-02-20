@@ -1,18 +1,27 @@
 <script>
-document.getElementById('conversionForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+document.getElementById('metricsForm').addEventListener('submit', calculateMetrics);
 
-    const totalVisits = document.getElementById('totalVisits').value;
-    const conversions = document.getElementById('conversions').value;
+function calculateMetrics() {
+    const totalCost = parseFloat(document.getElementById('totalCost').value);
+    const newCustomers = parseInt(document.getElementById('newCustomers').value);
+    const avgValue = parseFloat(document.getElementById('avgValue').value);
+    const frequency = parseFloat(document.getElementById('frequency') ? document.getElementById('frequency').value : 12);
+    const customerLife = parseInt(document.getElementById('customerLife').value);
+    const lostCustomers = parseInt(document.getElementById('lostCustomers').value);
 
-    if (totalVisits === '' || conversions === '') {
-        alert('Por favor, ingresa los valores para ambos campos.');
+    if (isNaN(totalCost) || isNaN(newCustomers) || isNaN(avgValue) || isNaN(customerLife) || isNaN(lostCustomers)) {
+        alert("Por favor, rellena todos los campos correctamente.");
         return;
     }
 
-    const conversionRate = (conversions / totalVisits) * 100;
-    document.getElementById('conversionRate').textContent = `Tasa de Conversión: ${conversionRate.toFixed(2)}%`;
+    const churnRate = ((lostCustomers / newCustomers) * 100).toFixed(2);
+    const CAC = (totalCost / newCustomers).toFixed(2);
+    const LTV = (avgValue * frequency * customerLife).toFixed(2);
 
-    document.getElementById('resultArea').classList.remove('hidden');
-});
+    document.getElementById('results').innerHTML = `
+        <p>Churn Rate: ${churnRate}%</p>
+        <p>CAC: $${CAC}</p>
+        <p>LTV: $${LTV}</p>
+    `;
+}
 </script>
