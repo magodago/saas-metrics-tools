@@ -1,15 +1,19 @@
 <script>
-document.getElementById('churn-form').onsubmit = function(e) {
-    e.preventDefault();
-    const initialCustomers = parseInt(document.getElementById('initial-customers').value);
-    const lostCustomers = parseInt(document.getElementById('lost-customers').value);
+document.getElementById('churnRateForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const totalCustomers = parseInt(document.getElementById('totalCustomers').value);
+    const lostCustomers = parseInt(document.getElementById('lostCustomers').value);
 
-    if(isNaN(initialCustomers) || isNaN(lostCustomers)) {
-        document.getElementById('result').innerText = "Por favor, ingresa valores numéricos válidos.";
+    if (isNaN(totalCustomers) || isNaN(lostCustomers)) {
+        alert("Por favor, ingresa valores numéricos.");
         return;
     }
 
-    const churnRate = (lostCustomers / initialCustomers) * 100;
-    document.getElementById('result').innerText = `Churn Rate: ${churnRate.toFixed(2)}%`;
-}
+    const churnRate = ((lostCustomers / totalCustomers) * 100).toFixed(2);
+    
+    document.getElementById('resultContainer').innerHTML = `
+      <p>La tasa de apretura es: ${churnRate}%</p>
+    `;
+});
 </script>
