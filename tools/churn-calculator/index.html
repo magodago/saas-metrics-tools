@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Calculadora de Churn Rate</title>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../_base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Churn rate calculator | Calculadoras SaaS</title>
+  <meta name="description" content="Calculadora gratis: Churn rate calculator. Churn rate calculator.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://magodago.github.io/saas-metrics-tools/tools/churn-calculator/">
+  <meta property="og:title" content="Churn rate calculator | Calculadoras SaaS">
+  <meta property="og:description" content="Calculadora gratis: Churn rate calculator. Churn rate calculator.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://magodago.github.io/saas-metrics-tools/tools/churn-calculator/">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Churn rate calculator","description":"Calculadora gratis: Churn rate calculator. Churn rate calculator.","url":"https://magodago.github.io/saas-metrics-tools/tools/churn-calculator/","applicationCategory":"FinanceApplication"}
+  </script>
 </head>
 <body>
-    <div class="container">
-        <h1>Calculadora de Churn Rate para SaaS</h1>
-        <form id="churn-form">
-            <label for="initial-customers">Clientes al inicio del periodo:</label>
-            <input type="number" id="initial-customers" required><br>
 
-            <label for="lost-customers">Clientes perdidos:</label>
-            <input type="number" id="lost-customers" required><br>
+<form id="churnRateForm">
+    <label for="totalCustomers">Total de Clientes:</label>
+    <input type="number" id="totalCustomers" required><br>
 
-            <button type="submit">Calcular</button>
-        </form>
-        <div id="result"></div>
-    </div>
+    <label for="lostCustomers">Clientes Perdidos:</label>
+    <input type="number" id="lostCustomers" required><br>
 
-<!-- MONETIZATION_BLOCK -->
-<section class="monetization-block" aria-label="Recomendación">
-  <p>Need help optimizing your SaaS metrics? We recommend using professional analytics tools.</p>
-  <a href="#" class="monetization-cta">Explore tools</a>
+    <button type="submit">Calcular</button>
+</form>
+
+<div id="resultContainer"></div>
+
+<script src="script.js"></script>
+
+<section class="tool-how-to" style="margin-top:1.5rem;padding:1rem;background:#f1f5f9;border-radius:8px;font-size:0.9375rem;">
+  <h3 style="font-size:1rem;margin-bottom:0.5rem;">Cómo usar esta calculadora</h3>
+  <p>Introduce los datos en los campos de arriba y pulsa Calcular. El resultado aparece al instante. Usa esta herramienta gratis para planificar tus métricas. Más guías en nuestro <a href="https://magodago.github.io/saas-metrics-tools/blog/">blog</a> y <a href="https://magodago.github.io/saas-metrics-tools/privacy.html">política de privacidad</a>.</p>
 </section>
 
+
+<section class="monetization" aria-label="Recommended tools">
+  <h3>Recommended SaaS Tools</h3>
+  <div class="affiliate-grid">
+    <div class="affiliate-card"><h4>Notion</h4><p>All-in-one workspace.</p><a href="/affiliate/notion/" class="affiliate-btn">Try Now</a></div>
+    <div class="affiliate-card"><h4>ChartMogul</h4><p>SaaS analytics.</p><a href="/affiliate/chartmogul/" class="affiliate-btn">Try Now</a></div>
+  </div>
+  <div id="adsense"></div>
+</section>
+
+<section class="related-tools"><h3>Más herramientas</h3><a href="https://magodago.github.io/saas-metrics-tools/">Todas las calculadoras</a></section>
 </body>
 </html>
