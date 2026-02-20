@@ -6,40 +6,53 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CAC calculator for startups | Free SaaS Metrics</title>
-  <meta name="description" content="Free CAC calculator for startups. CAC calculator for startups.">
+  <title>Customer acquisition cost (CAC) to LTV ratio calculator | Calculadoras SaaS</title>
+  <meta name="description" content="Calculadora gratis: Customer acquisition cost (CAC) to LTV ratio calculator. Customer acquisition cost (CAC) to LTV ratio calculator.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://magodago.github.io/saas-metrics-tools/tools/cac-calculator/">
-  <meta property="og:title" content="CAC calculator for startups | Free SaaS Metrics">
-  <meta property="og:description" content="Free CAC calculator for startups. CAC calculator for startups.">
+  <meta property="og:title" content="Customer acquisition cost (CAC) to LTV ratio calculator | Calculadoras SaaS">
+  <meta property="og:description" content="Calculadora gratis: Customer acquisition cost (CAC) to LTV ratio calculator. Customer acquisition cost (CAC) to LTV ratio calculator.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://magodago.github.io/saas-metrics-tools/tools/cac-calculator/">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebApplication","name":"CAC calculator for startups","description":"Free CAC calculator for startups. CAC calculator for startups.","url":"https://magodago.github.io/saas-metrics-tools/tools/cac-calculator/","applicationCategory":"FinanceApplication"}
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Customer acquisition cost (CAC) to LTV ratio calculator","description":"Calculadora gratis: Customer acquisition cost (CAC) to LTV ratio calculator. Customer acquisition cost (CAC) to LTV ratio calculator.","url":"https://magodago.github.io/saas-metrics-tools/tools/cac-calculator/","applicationCategory":"FinanceApplication"}
   </script>
 </head>
 <body>
-    <div class="calculator-container">
-        <h1>CAC Calculator for Startups</h1>
-        <form id="cac-form">
-            <label for="cost-per-acquisition">Costo por adquisición (C):</label>
-            <input type="number" id="cost-per-acquisition" required>
-            
-            <label for="total-revenue">Ganancias totales (R):</label>
-            <input type="number" id="total-revenue" required>
 
-            <button type="submit">Calcular CAC</button>
-        </form>
-        <div id="result" class="result">
-            <h2>Resultado:</h2>
-            <p id="cac-result"></p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+<div class="container">
+    <h1>Cálculo CAC a LTV</h1>
+    
+    <form id="calculatorForm">
+        <label for="totalCost">Coste total de adquisición:</label><br>
+        <input type="number" id="totalCost" name="totalCost" required><br>
+        
+        <label for="newCustomers">Número de clientes nuevos:</label><br>
+        <input type="number" id="newCustomers" name="newCustomers" required><br>
+        
+        <label for="avgValue">Valor medio (LTV):</label><br>
+        <input type="number" id="avgValue" name="avgValue" step="0.01" required><br>
+        
+        <label for="frequency">Frecuencia de compra:</label><br>
+        <input type="number" id="frequency" name="frequency" required><br>
+        
+        <label for="customerLifetime">Vida del cliente (en meses):</label><br>
+        <input type="number" id="customerLifetime" name="customerLifetime" min="1" required><br>
+        
+        <label for="churnRate">Tasa de churn:</label><br>
+        <input type="number" id="churnRate" name="churnRate" step="0.01" required><br>
+        
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script src="script.js"></script>
 
 <section class="tool-how-to" style="margin-top:1.5rem;padding:1rem;background:#f1f5f9;border-radius:8px;font-size:0.9375rem;">
-  <h3 style="font-size:1rem;margin-bottom:0.5rem;">How to use this calculator</h3>
-  <p>Enter your numbers in the fields above and click Calculate. The result appears instantly. Use this free tool to plan your metrics. For more guides, see our <a href="https://magodago.github.io/saas-metrics-tools/blog/">blog</a> and <a href="https://magodago.github.io/saas-metrics-tools/privacy.html">privacy policy</a>.</p>
+  <h3 style="font-size:1rem;margin-bottom:0.5rem;">Cómo usar esta calculadora</h3>
+  <p>Introduce los datos en los campos de arriba y pulsa Calcular. El resultado aparece al instante. Usa esta herramienta gratis para planificar tus métricas. Más guías en nuestro <a href="https://magodago.github.io/saas-metrics-tools/blog/">blog</a> y <a href="https://magodago.github.io/saas-metrics-tools/privacy.html">política de privacidad</a>.</p>
 </section>
 
 
@@ -52,6 +65,6 @@
   <div id="adsense"></div>
 </section>
 
-<section class="related-tools"><h3>More tools</h3><a href="https://magodago.github.io/saas-metrics-tools/">All calculators</a></section>
+<section class="related-tools"><h3>Más herramientas</h3><a href="https://magodago.github.io/saas-metrics-tools/">Todas las calculadoras</a></section>
 </body>
 </html>
