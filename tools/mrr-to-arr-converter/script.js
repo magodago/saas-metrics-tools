@@ -1,15 +1,22 @@
 <script>
 document.getElementById('converterForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
-    const mrr = document.getElementById('mrr').value;
-    if (!mrr || isNaN(mrr)) {
-        alert("Por favor, ingresa un valor válido para MRR.");
+
+    const mrr = document.querySelector('#mrr').value;
+    if (mrr === '') {
+        alert('Por favor, ingresa el valor de MRR.');
         return;
     }
-    
-    const result = (parseFloat(mrr) * 12).toFixed(2);
-    document.getElementById('result').innerText = `ARR: $${result}`;
-    document.getElementById('resultArea').style.display = 'block';
+
+    const periodoSelect = document.querySelector('#periodo');
+    const periodo = parseInt(periodoSelect.value);
+    let arr;
+
+    if (!isNaN(mrr)) {
+        arr = mrr * periodo;
+        document.getElementById('result').innerText = `ARR: ${arr.toFixed(2)} millones`;
+    } else {
+        alert('Por favor, ingresa un valor numérico para MRR.');
+    }
 });
 </script>
