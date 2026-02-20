@@ -1,0 +1,25 @@
+<style>
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+label, input, .btn, #result {
+    display: block;
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+#result p {
+    font-size: 1.2em;
+}
+</style>
