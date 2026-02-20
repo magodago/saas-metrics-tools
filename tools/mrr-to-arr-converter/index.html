@@ -6,37 +6,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MRR to ARR converter | Free SaaS Metrics</title>
-  <meta name="description" content="Free MRR to ARR converter. MRR to ARR converter.">
+  <title>MRR to ARR converter | Calculadoras SaaS</title>
+  <meta name="description" content="Calculadora gratis: MRR to ARR converter. MRR to ARR converter.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://magodago.github.io/saas-metrics-tools/tools/mrr-to-arr-converter/">
-  <meta property="og:title" content="MRR to ARR converter | Free SaaS Metrics">
-  <meta property="og:description" content="Free MRR to ARR converter. MRR to ARR converter.">
+  <meta property="og:title" content="MRR to ARR converter | Calculadoras SaaS">
+  <meta property="og:description" content="Calculadora gratis: MRR to ARR converter. MRR to ARR converter.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://magodago.github.io/saas-metrics-tools/tools/mrr-to-arr-converter/">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebApplication","name":"MRR to ARR converter","description":"Free MRR to ARR converter. MRR to ARR converter.","url":"https://magodago.github.io/saas-metrics-tools/tools/mrr-to-arr-converter/","applicationCategory":"FinanceApplication"}
+  {"@context":"https://schema.org","@type":"WebApplication","name":"MRR to ARR converter","description":"Calculadora gratis: MRR to ARR converter. MRR to ARR converter.","url":"https://magodago.github.io/saas-metrics-tools/tools/mrr-to-arr-converter/","applicationCategory":"FinanceApplication"}
   </script>
 </head>
 <body>
-    <div class="container">
-        <h1>MRR a ARR Converter</h1>
-        <form id="converterForm">
-            <label for="mrr">MRR (Monthly Recurring Revenue):</label><br>
-            <input type="number" id="mrr" required><br><br>
-            <button type="submit">Calcular</button>
-        </form>
-        <div class="result-area" id="resultArea">
-            <h2>Resultado:</h2>
-            <p id="result"></p>
-        </div>
-    </div>
 
-    <script src="scripts.js"></script>
+<div class="container">
+    <h1>Conversor de MRR a ARR</h1>
+    
+    <form id="converterForm">
+        <label for="mrr">MRR (Millones por mes):</label><br>
+        <input type="number" id="mrr" name="mrr"><br>
+
+        <label for="periodo">Periodo de conversión:</label><br>
+        <select id="periodo">
+            <option value="12">1 año (12 meses)</option>
+            <option value="6">6 meses</option>
+            <option value="3">3 meses</option>
+        </select>
+
+        <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+
+    <div id="resultado" style="margin-top: 20px; padding: 15px; background-color: #f9f9f9;">
+        <p>Resultado:</p>
+        <p id="result"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
 
 <section class="tool-how-to" style="margin-top:1.5rem;padding:1rem;background:#f1f5f9;border-radius:8px;font-size:0.9375rem;">
-  <h3 style="font-size:1rem;margin-bottom:0.5rem;">How to use this calculator</h3>
-  <p>Enter your numbers in the fields above and click Calculate. The result appears instantly. Use this free tool to plan your metrics. For more guides, see our <a href="https://magodago.github.io/saas-metrics-tools/blog/">blog</a> and <a href="https://magodago.github.io/saas-metrics-tools/privacy.html">privacy policy</a>.</p>
+  <h3 style="font-size:1rem;margin-bottom:0.5rem;">Cómo usar esta calculadora</h3>
+  <p>Introduce los datos en los campos de arriba y pulsa Calcular. El resultado aparece al instante. Usa esta herramienta gratis para planificar tus métricas. Más guías en nuestro <a href="https://magodago.github.io/saas-metrics-tools/blog/">blog</a> y <a href="https://magodago.github.io/saas-metrics-tools/privacy.html">política de privacidad</a>.</p>
 </section>
 
 
@@ -49,6 +60,6 @@
   <div id="adsense"></div>
 </section>
 
-<section class="related-tools"><h3>More tools</h3><a href="https://magodago.github.io/saas-metrics-tools/">All calculators</a></section>
+<section class="related-tools"><h3>Más herramientas</h3><a href="https://magodago.github.io/saas-metrics-tools/">Todas las calculadoras</a></section>
 </body>
 </html>
