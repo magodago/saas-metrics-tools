@@ -6,48 +6,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conversion rate calculator | Free SaaS Metrics</title>
-  <meta name="description" content="Free Conversion rate calculator. Conversion rate calculator.">
+  <title>Conversion rate calculator | Calculadoras SaaS</title>
+  <meta name="description" content="Calculadora gratis: Conversion rate calculator. Conversion rate calculator.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://magodago.github.io/saas-metrics-tools/tools/conversion-rate-calculator/">
-  <meta property="og:title" content="Conversion rate calculator | Free SaaS Metrics">
-  <meta property="og:description" content="Free Conversion rate calculator. Conversion rate calculator.">
+  <meta property="og:title" content="Conversion rate calculator | Calculadoras SaaS">
+  <meta property="og:description" content="Calculadora gratis: Conversion rate calculator. Conversion rate calculator.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://magodago.github.io/saas-metrics-tools/tools/conversion-rate-calculator/">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebApplication","name":"Conversion rate calculator","description":"Free Conversion rate calculator. Conversion rate calculator.","url":"https://magodago.github.io/saas-metrics-tools/tools/conversion-rate-calculator/","applicationCategory":"FinanceApplication"}
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Conversion rate calculator","description":"Calculadora gratis: Conversion rate calculator. Conversion rate calculator.","url":"https://magodago.github.io/saas-metrics-tools/tools/conversion-rate-calculator/","applicationCategory":"FinanceApplication"}
   </script>
 </head>
 <body>
+    <div class="card">
+        <h1>Cálculo de métricas SaaS</h1>
+        <form id="metricsForm" onsubmit="event.preventDefault(); calculateMetrics()">
+            <label for="totalCost">Total coste adquisición:</label>
+            <input type="number" id="totalCost" required><br>
 
-<div class="container">
-    <h1>Calculadora de Tasa de Conversión</h1>
-    
-    <form id="conversionForm">
-        <div class="input-group">
-            <label for="totalVisits">Total de Visitas:</label>
-            <input type="number" id="totalVisits" required>
-        </div>
-        
-        <div class="input-group">
-            <label for="conversions">Número de Converciones:</label>
-            <input type="number" id="conversions" required>
-        </div>
+            <label for="newCustomers">Número de clientes nuevos:</label>
+            <input type="number" id="newCustomers" required><br>
 
-        <button type="submit">Calcular</button>
-    </form>
+            <label for="avgValue">Valor medio:</label>
+            <input type="number" id="avgValue" required><br>
 
-    <div id="resultArea" class="result-area hidden">
-        <h2>Tasa de Conversión</h2>
-        <p id="conversionRate"></p>
+            <label for="frequency">Frecuencia (por mes):</label>
+            <input type="number" id="frequency"><br>
+
+            <label for="customerLife">Vida del cliente (en meses):</label>
+            <input type="number" id="customerLife" required><br>
+
+            <label for="lostCustomers">Número de clientes perdidos:</label>
+            <input type="number" id="lostCustomers" required><br>
+
+            <button type="submit">Calcular</button>
+        </form>
+        <div class="result" id="results"></div>
     </div>
-</div>
-
-<script src="script.js"></script>
 
 <section class="tool-how-to" style="margin-top:1.5rem;padding:1rem;background:#f1f5f9;border-radius:8px;font-size:0.9375rem;">
-  <h3 style="font-size:1rem;margin-bottom:0.5rem;">How to use this calculator</h3>
-  <p>Enter your numbers in the fields above and click Calculate. The result appears instantly. Use this free tool to plan your metrics. For more guides, see our <a href="https://magodago.github.io/saas-metrics-tools/blog/">blog</a> and <a href="https://magodago.github.io/saas-metrics-tools/privacy.html">privacy policy</a>.</p>
+  <h3 style="font-size:1rem;margin-bottom:0.5rem;">Cómo usar esta calculadora</h3>
+  <p>Introduce los datos en los campos de arriba y pulsa Calcular. El resultado aparece al instante. Usa esta herramienta gratis para planificar tus métricas. Más guías en nuestro <a href="https://magodago.github.io/saas-metrics-tools/blog/">blog</a> y <a href="https://magodago.github.io/saas-metrics-tools/privacy.html">política de privacidad</a>.</p>
 </section>
 
 
@@ -60,6 +60,6 @@
   <div id="adsense"></div>
 </section>
 
-<section class="related-tools"><h3>More tools</h3><a href="https://magodago.github.io/saas-metrics-tools/">All calculators</a></section>
+<section class="related-tools"><h3>Más herramientas</h3><a href="https://magodago.github.io/saas-metrics-tools/">Todas las calculadoras</a></section>
 </body>
 </html>
