@@ -1,0 +1,24 @@
+<style>
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+label, input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #007bff;
+}
+
+.result-area {
+    margin-top: 30px;
+    text-align: center;
+}
+</style>
